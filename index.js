@@ -46,3 +46,27 @@ if (film) {
   );
 }
 
+window.addEventListener('popstate', (e) => {
+  const params = window.location.search
+    .replace('?', '')
+    .split('&')
+    .reduce(function (p, e) {
+      let a = e.split('=');
+      p[decodeURIComponent(a[0])] = decodeURIComponent(a[1]);
+      return p;
+    }, {});
+  const film = params['film'] ?? void 0;
+  if (film) {
+    rendalPage(
+      './film-info.js',
+      `https://swapi.dev/api/films/${film}`,
+      'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css'
+    );
+  } else {
+    rendalPage(
+      './general-info.js',
+      'https://swapi.dev/api/films',
+      'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css'
+    );
+  }
+});
