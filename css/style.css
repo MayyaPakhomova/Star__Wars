@@ -15,7 +15,12 @@ img {
   min-width: 100%;
   min-height   : 100%;
 }
-
+html,
+body {
+  height : 100%;
+  margin : 0;
+  padding: 0;
+}
 .card {
   background-color: unset;
 }
@@ -23,12 +28,8 @@ img {
 #app {
   min-height: 100%;
   min-width : 100%;
-  width     : 100%;
-  height    : auto;
-  position  : fixed;
-  top       : 0;
-  left      : 0;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
