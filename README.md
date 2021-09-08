@@ -9,3 +9,10 @@
 показывает информацию об эпизоде, номер которого должен быть передан в URL страницы
 
 
+
+C добавленным `background-image` (то что сейчас в репозитории)  [StarWar-Color](https://mayyapakhomova.github.io/Star__War/)
+
+И `без background-image` [StarWar-Black&White](https://star-wars.webtm.ru)
+
+
+
