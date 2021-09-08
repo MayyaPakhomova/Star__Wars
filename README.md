@@ -1,4 +1,4 @@
-# Star__War
+# Star__Wars
 
 Приложение имеет 2 вида страниц:
 
@@ -10,9 +10,9 @@
 
 
 
-C добавленным `background-image` (то что сейчас в репозитории)  [StarWar-Color](https://mayyapakhomova.github.io/Star__War/)
+C добавленным `background-image` (то что сейчас в репозитории)  [StarWars-Color](https://mayyapakhomova.github.io/Star__War/)
 
-И `без background-image` [StarWar-Black&White](https://star-wars.webtm.ru)
+И `без background-image` [StarWars-Black&White](https://star-wars.webtm.ru)
 
 
 
