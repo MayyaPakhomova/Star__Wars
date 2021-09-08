@@ -1,10 +1,13 @@
 import { rendalPage } from './index.js';
+
 export function render(data) {
+
   const container = document.createElement('div');
   container.classList.add('container');
   const appContainer = document.getElementById('app');
+   appContainer.style.backgroundImage = 'url(img/main.jpg)';
   const header = document.createElement('h1');
-  header.classList.add('m-3', 'text-secondary', 'text-center');
+  header.classList.add('p-3', 'text-secondary', 'text-center');
   header.textContent = 'May the Force be with you';
   appContainer.append(header);
 

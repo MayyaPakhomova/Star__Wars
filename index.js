@@ -12,7 +12,7 @@ function loadResource(src) {
       cssPromises[src] = new Promise((resolve) => {
         link.addEventListener('load', () => resolve());
       });
-      document.head.append(link);
+     document.head.prepend(link);
     }
     return cssPromises[src];
   }
@@ -41,7 +41,7 @@ if (film) {
 } else {
   rendalPage(
     './general-info.js',
-    'https://swapi.dev/api/films',
+    `https://swapi.dev/api/films`,
     'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css'
   );
 }
@@ -59,14 +59,16 @@ window.addEventListener('popstate', (e) => {
   if (film) {
     rendalPage(
       './film-info.js',
-      `https://swapi.dev/api/films/${film}`,
+      `https://swapi.dev/api/films/`,
       'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css'
     );
   } else {
     rendalPage(
       './general-info.js',
-      'https://swapi.dev/api/films',
+      `https://swapi.dev/api/films`,
       'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css'
     );
   }
 });
+
+// {mode:'no-cors'}

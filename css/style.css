@@ -1,0 +1,41 @@
+ul {
+  margin    : 0;
+  padding   : 0;
+  list-style: none
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0
+}
+
+img {
+  min-width: 100%;
+  min-height   : 100%;
+}
+
+.card {
+  background-color: unset;
+}
+
+#app {
+  min-height: 100%;
+  min-width : 100%;
+  width     : 100%;
+  height    : auto;
+  position  : fixed;
+  top       : 0;
+  left      : 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  #app {
+    left       : 50%;
+    margin-left: -512px;
+    /* 50% */
+  }
+}
