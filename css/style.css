@@ -32,10 +32,3 @@ img {
   background-size: cover;
 }
 
-@media screen and (max-width: 1024px) {
-  #app {
-    left       : 50%;
-    margin-left: -512px;
-    /* 50% */
-  }
-}
