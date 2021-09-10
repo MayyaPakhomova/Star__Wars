@@ -10,7 +10,7 @@
 
 
 
-C добавленным `background-image` (то что сейчас в репозитории)  [StarWars-Color](https://mayyapakhomova.github.io/Star__War/)
+C добавленным `background-image` (то что сейчас в репозитории)  [StarWars-Color](https://mayyapakhomova.github.io/Star__Wars)
 
 И `без background-image` [StarWars-Black&White](https://star-wars.webtm.ru)
 
